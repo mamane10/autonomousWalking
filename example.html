@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>example</title>
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="labid"></div>
+<script src="js/autonomousWalking.js"></script>
+<script>
+    lab = new Lab('labid',0.4,17,20);
+    lab.create();
+
+    // using findNexCase until E case (distance == 0) or impossible (distance== false)
+    int = setInterval(function () {
+            distance = lab.findNextCase();
+            if (distance  === 0 || distance  === false) {
+                if (distance  === false) {
+                    alert("impossible");
+                }
+                else {
+                    alert("success");
+                }
+                clearInterval(int);
+            }
+        }, 100);
+
+</script>
+</body>
+</html>

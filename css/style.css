@@ -1,0 +1,54 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+i.indication
+{
+    color: black;
+}
+.case
+{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    border: solid 1px black;
+    margin: 0;
+    text-align: center;
+    line-height: 25px;
+    font-weight: bold;
+    color: white;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.line .case:first-child
+{
+    border-left: solid 2px black;
+}
+.line .case:last-child
+{
+    border-right: solid 2px black;
+}
+.labirent88889 .line:first-child .case
+{
+    border-top: solid 2px black;
+}
+.labirent88889 .line:last-child .case
+{
+    border-bottom: solid 2px black;
+}
+/**line**/
+.line
+{
+    padding: 0;
+    height: 27px;
+    margin: 0;
+}
+.line:first-child
+{
+    height: 28px;
+}
+
